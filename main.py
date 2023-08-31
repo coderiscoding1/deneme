@@ -22,6 +22,8 @@ async def on_message(message):
         await message.channel.send(sifreuret(5))
     elif message.content.startswith('$bye'):
         await message.channel.send("\U0001f642")
+    elif message.content.startswith('$chat'):
+        await message.channel.send("merhaba nasılsın günün nasıldı")
     else:
         await message.channel.send(message.content)
 
